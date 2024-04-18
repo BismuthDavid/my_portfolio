@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+  }
+  
+  .mt{
+    margin-top: 20px;
+  }
+
+  .right{
+    position: absolute;
+     bottom: 20px;
+     text-align: center;
+     color: #8b8b8b;
+  }
+
+  .profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .sidebar nav a:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+    width: 60%;
+  }
+  
+  .about {
+    margin-bottom: 40px;
+  }
+  
+  .services {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+  
+  .service {
+    text-align: center;
+  }
+  
+  .service i {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .projects {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .projects button {
+    margin-top: 20px;
+    background-color: #333;
+    border-radius: 25px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  button a{
+    color: white;
+    text-decoration: none;;
+}
+
+button:hover{
+    background: #55555599;
+}
+
+  
+  .toggle-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .toggle-btn span {
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+
+
+
+  /* home page */
+  .bold{
+    font-weight: bold;
+  }
+/* 
+edu */
+h4{
+  margin-top: 50px
+}
+p{
+  font-family: "M PLUS Code Latin", monospace;
+  line-height: 1.5;
+}
+
+/* 
+work */
+.website{
+  border-radius: 25px;
+  margin-top: 20px;
+  height: 80vh;
+  width: 100%;
+}
+
+.small-site{
+  display: none;;
+}
+
+.head{
+  font-family: "M PLUS Code Latin", monospace;
+  text-align: center;
+}
+.github{
+  font-family: "M PLUS Code Latin", monospace;
+  text-decoration: none;
+  color:#808080;
+  transition: 1s;
+  font-size: 1.5em;
+}
+.github:hover{
+  color:#151515;
+  font-size: 1.7em;
+}
+
+
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 50%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      transition: left 0.3s ease;
+      z-index: 2;
+      overflow-y: auto;
+    }
+  
+    .sidebar.show {
+      left: 0;
+    }
+  
+    .profile img {
+      width: 100px;
+      height: 100px;
+    }
+    .content {
+      margin-top: 60px;
+    }
+  
+    .toggle-btn {
+      display: flex;
+    }
+
+    .content {
+      width: 100%;
+  }
+  .services {
+    display: block;
+  }
+
+  .small-site{
+    display: block;
+  }
+
+  .lg-site{
+    display: none;
+  }
+
+  }

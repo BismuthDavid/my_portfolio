@@ -1,0 +1,57 @@
+body{
+    font-family: "M PLUS Code Latin", monospace;
+
+}
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
+  .social{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+
+  .cntct{
+    margin-top: 50px;
+    color: #333;
+    text-decoration: none;
+    font-size: 2.5em;
+  }
+
+  .watsapp:hover{
+    color:#188c7c;
+  }
+
+  .linkedin:hover{
+    color: #0077B5;
+  }

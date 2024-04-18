@@ -1,0 +1,67 @@
+.skils{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .skils i{
+    font-size: 3em;
+    margin-left: 7%;
+    margin-top: 2%;
+  }
+
+.sql:hover{
+    color: rgba(130, 130, 255, 0.959);
+}
+
+.git:hover{
+    color: #f05030;
+}
+
+.js:hover{
+    color: #f7df1e;
+}
+
+.bs:hover{
+    color: #7309f6;
+}
+
+.css:hover{
+    color: #1572b6;
+}
+
+.html:hover{
+    color: #e34c26;
+}
+
+.python:hover{
+    color: #3572A5;
+}
+
+.linux:hover{
+    color: #565656;
+}
+
+.font-head{
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+}
+
+.new-font {
+  font-family: "M PLUS Code Latin", monospace;
+  line-height: 1.5;
+
+}
+
+@media (max-width: 1181px) {
+
+    .skils i{
+        font-size: 2.5em;
+        margin-left: 5%;
+        margin-top: 2%;
+      }
+      .new-font {
+        line-height: 1.2;
+      }
+      
+}
